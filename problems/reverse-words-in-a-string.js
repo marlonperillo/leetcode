@@ -2,15 +2,12 @@
  * @param {string} s
  * @return {string}
  */
- var reverseWords = function(s) {
-    s = s.replace(/  +/g, ' ');
-    const words = s.trim().split(" ")
-    
-    // console.log(words)
-    return words.reverse().reduce((a, b) => {
-        return `${a} ${b}`
-    }, "").trim()
-    
-    
-    
+// eslint-disable-next-line no-unused-vars
+const reverseWords = (s) => {
+  const sTrimmed = s.replace(/  +/g, ' ');
+
+  const words = sTrimmed.trim().split(' ');
+
+  // console.log(words)
+  return words.reverse().reduce((a, b) => `${a} ${b}`, '').trim();
 };
