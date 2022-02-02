@@ -2,6 +2,7 @@
  * @param {number} n
  * @return {string[]}
  */
+// eslint-disable-next-line no-unused-vars
 const fizzBuzz = (n) => {
   const returnArray = [];
   for (let i = 1; i < 20000; i += 1) {
