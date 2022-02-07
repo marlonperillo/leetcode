@@ -49,8 +49,6 @@ const buddyStrings = (s, goal) => {
 
     let doubleCharFlag = false;
 
-    console.log(chars);
-    console.log(charCount);
     chars.forEach((c) => {
       if (charCount[c] >= 2) {
         doubleCharFlag = true;
